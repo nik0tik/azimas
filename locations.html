@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Locations — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+
+  <main>
+    <h2>Noxland — Capital</h2>
+    <p>The capital of Azimas, where most of the world's magical energy is
+       concentrated.</p>
+    <ul>
+      <li><b>Geography:</b> Built upon a "Convergence Point" of global ley lines. A
+          massive walled metropolis surrounded by satellite villages, hunting
+          forests, and farmland.</li>
+      <li><b>Architecture:</b> Eastern-European high fantasy. Soaring white limestone
+          structures, silver-capped onion domes, tapered spires. White, blue, and
+          silver. Concentric high walls separate the city's tiers.</li>
+    </ul>
+    <p><b>Key landmarks:</b> Noxland Castle (the central fortress-palace); Eden
+       Academy (a sprawling campus in the Magical District); The Grand Market (the
+       kingdom's primary hub of luxury trade and alchemical shops).</p>
+    <ul>
+      <li><b>Economy:</b> The wealthiest city in the known world, powered by enchanted
+          goods and royal taxation.</li>
+      <li><b>Politics:</b> Absolute monarchy. Home to the Black Vine Coven.</li>
+      <li><b>Defense:</b> Protected by the Golden Lions, an elite knight order.</li>
+    </ul>
+    <div class="carousel">
+      <img src="images/locations/Azimas.jpg" alt="" data-caption="Noxland"></a>
+     </div>
+
+    <h2>Fairhaven — Craft Village</h2>
+    <ul>
+      <li><b>Geography:</b> A lush valley of rolling emerald hills, bisected by the
+          High-Road to Noxland, surrounded by the Wild Forest — an ancient fairy
+          forest.</li>
+      <li><b>Architecture:</b> Pastoral cottagecore. Whitewashed stone houses with
+          thick thatch roofs and "living wood" elements. Gates and doors painted
+          deep indigo or black. Large protective obelisks ring the village.</li>
+    </ul>
+    <p><b>Key landmarks:</b> The Traveler's Rest (a two-story tavern and inn, the
+       social hub); the Lantern-Grove Cemetery (a huge graveyard on the forest's
+       edge where all surrounding townsfolk are buried); Selena's hut (the Octopus
+       Coven's base).</p>
+    <ul>
+      <li><b>Economy:</b> High-yield agriculture and crafts. Wealthy due to proximity
+          to the capital and the road.</li>
+      <li><b>Politics:</b> Co-governed by a Village Elder and the Coven's Head. Strict
+          adherence to the Fairy Council's requirements.</li>
+      <li><b>Protection:</b> Under the Octopus Coven and Fairy Council.</li>
+    </ul>
+    <div class="danger">
+      <h3>Restless Cemetery</h3>
+      <p>Due to the high concentration of magic and the proximity of fairies, the
+         area is notorious for attracting evil spirits and necromancers, making the
+         cemetery restless.</p>
+    </div>
+    <p class="flavor">A regular Sunday fair fills the village with festivities and
+       music.</p>
+    <div class="carousel">
+      <img src="images/locations/faihaven.jpg" alt="" data-caption="Fairhaven"></a>
+      <img src="images/locations/faihaven_cemetery.jpg" alt="" data-caption="Fairhaven cemetery"></a>
+      <img src="images/locations/faihaven_tavern.jpg" alt="" data-caption="Fairhaven tavern"></a>
+     </div>
+
+    <h2>Sidehill — Mining Hub</h2>
+    <p class="flavor">"This is where magic disappears and unfiltered power appears."</p>
+    <ul>
+      <li><b>Geography:</b> Built into the steep terraced slopes of the Iron-Shoulder
+          Range. Extreme verticality — streets are mostly stone stairs and wooden
+          ramps. Snow-capped peaks year-round, with villages at the foot.</li>
+      <li><b>Architecture:</b> Nordic. Low-slung sod-roofed longhouses, deep granite
+          foundations against tremors, dark-stained pine, runic carvings, massive
+          iron-reinforced pulley-elevators for ore.</li>
+    </ul>
+    <p><b>Key landmarks:</b> The Maw (a colossal tiered mine descending miles into
+       the mountain); The Silence (a high-security prison for mages, lined with raw
+       antimagic ore); the Smelter-District (a permanent cloud of black smoke over
+       the lower tiers). Malfurion's lair lies on the far side of the mountain.</p>
+    <ul>
+      <li><b>Economy:</b> Wealthy but grim. Monopolizes "antimagic ore" — a lead-heavy,
+          magic-nullifying ore.</li>
+      <li><b>Politics:</b> Governed by the Council of Hammers. Militaristic labor laws;
+          a "work or die" philosophy.</li>
+    </ul>
+    <div class="danger">
+      <h3>The Anti-Magic Field</h3>
+      <p>The stored ore creates a "Dead Zone." Within town limits spells fizzle,
+         magical items go dormant, and mages suffer chronic migraines or nausea.</p>
+    </div>
+    <div class="carousel">
+      <img src="images/locations/sidehill.png" alt="" data-caption="Sidehill"></a>
+     </div>
+
+    <h2>Whitevale — Port City</h2>
+    <p>A port city a week's drive from the capital.</p>
+    <ul>
+      <li><b>Geography:</b> A crescent bay flanked by towering white limestone cliffs.
+          Tiered elevation — Lower Docks, The Terrace (trade), The High Crown
+          (nobility). Rumors of mermaids.</li>
+      <li><b>Architecture:</b> Medieval-industrial. Timber-framed houses, steep grey
+          slate roofs, a defensive sea wall with iron-grated water gates.</li>
+    </ul>
+    <p><b>Key landmarks:</b> Academy of Navigation (trains everyone connected with
+       the sea); the Salt Market (an open-air bazaar of brine, spices, and dried
+       fish); the Chain-Span (a heavy drawbridge to the naval shipyards); the Black
+       Lighthouse (on a tiny, reputedly cursed island where magic fails — it has
+       burned twice).</p>
+    <ul>
+      <li><b>Economy:</b> A transit city with high merchant turnover, earning on taxes.</li>
+      <li><b>Politics:</b> Governed by local lords. High corruption and crime.</li>
+      <li><b>Mood:</b> Perpetual morning mist, overcast skies, bustling and cramped.
+          Tensions rising after a recent pirate attack.</li>
+          <div class="carousel">
+      <img src="images/locations/whitevale.jpg" alt="" data-caption="Sidehill"></a>
+     </div>
+
+    </ul>
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

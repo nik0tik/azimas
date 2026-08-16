@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Kingdom of Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <div class="disclaimer">
+      <b>⚠ 18+ / MATURE CONTENT</b><br>
+      This lorebook contains adult themes and mature content. By continuing you
+      confirm you are of legal age in your country. Fiction only.
+    </div>
+    
+    <!-- ПЛАШКА КОНТАКТОВ -->
+    <div class="contact">
+      <img src="images/other/avatar.jpg" alt="Author avatar" class="no-zoom">
+      <div class="contact-info">
+        <h3>Nikotik</h3>
+        <p>Creator of the Kingdom of Azimas. Reach me here:</p>
+        <div class="contact-links">
+          <a href="https://janitorai.com/profiles/a5ab42ac-5ef8-4fb1-a2a5-f97d5caca6a5_profile-of-nikotik" target="_blank">JanitorAI</a>
+          <a href="~" target="_blank">Discord: @Nikotik</a>
+          <a href="https://drive.google.com/drive/folders/1RgE5uKO0jA2wrozSLbRPrYVK-75iSvgh?usp=sharing" target="_blank">SillyTavern Cards</a>
+          <a href="https://t.me/nikotikotvechau" target="_blank">Telegram (RU shitpost)</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Welcome to Azimas</h2>
+    <p>A medieval fantasy realm where witches bargain with nature for power, mages master ancient runes through grueling study, and werebeasts struggle against their feral instincts.</p>
+    
+    <p class="flavor">"So far I've only focused on one kingdom. The world is larger, but Azimas is home."</p>
+
+    <h2>Major Settlements</h2>
+    <ul>
+      <li><b>Noxland</b> — capital.</li>
+      <li><b>Fairhaven</b> — craft village.</li>
+      <li><b>Sidehill</b> — mining hub.</li>
+      <li><b>Whitevale</b> — port city in a crescent bay.</li>
+    </ul>
+
+    <div class="term">
+      <h3>Two Paths of Magic</h3>
+      <p>Magic exists in two paths: becoming a <b>mage</b> (innate abilities,
+         studying at the academy) or a <b>witch</b> (a connection with nature
+         through joining a coven). Nature magic is unavailable to mages.</p>
+    </div>
+
+    <div class="nature">
+      <h3>Covens</h3>
+      <p>A coven is a union of witches (from 3 members and up). They connect
+         with nature and gain certain powers as long as they remain part of
+         their coven. Witches are bound to the goddess Dawn. Leaving a coven strips all magic permanently.</p>
+    </div>
+
+    <div class="danger">
+      <h3>Necromancy</h3>
+      <p>Necromancy is forbidden everywhere.</p>
+    </div>
+
+    <h2>🔮Mages</h2>
+    <p>Magic is inherited and present from birth. Patron deity: Noon, keeper of knowledge. The elite among them,
+       <b>Sages</b>, are honored scholar-mages who have served the kingdom, taught
+       apprentices, and may combine two magical branches.</p>
+    
+    <h2>Magical Branches</h2>
+    <p>Elementalism, Restoration, Occultism, Transmutation, Household (all for mages), Witchcraft (nature, only for witches), and forbidden Necromancy.
+       All mage branches have side effects.</p>
+    <ul>
+      <li><b>Elementalism</b> — elements and their combinations. Side effect: extreme hunger and exhaustion.</li>
+      <li><b>Restoration</b> — healing and buffs. Side effect: caster experiences patient's pain.</li>
+      <li><b>Occultism</b> — spirit manipulation, summoning, illusions. Side effect: corruption, madness, soul erosion.</li>
+      <li><b>Transmutation</b> — matter and spatial manipulation. Side effect: uncontrolled restructuring, explosions.</li>
+      <li><b>Household</b> — simple, convenient magic for daily life. No side effects.</li>
+      <li><b>Witchcraft</b> — nature magic, alchemy, potions. Only witches.</li>
+      <li><b>Necromancy</b> — death-energy, decay, severance. Forbidden.</li>
+    </ul>
+    <p><b>Eden Academy</b> is the main place for mage education. The Great Library has four access levels.</p>
+
+    <div class="term">
+      <h3>Sympathetic Bond</h3>
+      <p>A bond between two different magical beings or a magical being and a human (romantic, pack hierarchy, life-debt, friendship, etc.). Grants telepathic communication and danger-sensing. Can only be severed by the partner's death. The Dove Coven specializes in breaking dangerous bonds through assassination.</p>
+    </div>
+  
+    <h2>🧹Witches</h2>
+    <p>Witches start with no magic; they are selected by a coven, trained in
+       herbcraft and ritual arts, and gain power at 18 through a coven ritual.
+       Their abilities come from nature, spirits, and intuition. Annual gatherings
+       at Places of Power maintain coven bonds. Patron deity: Dawn, Mother Nature.</p>
+
+    <div class="term">
+      <h3>Witch's Soul</h3>
+      <p>Witch bond (gives the witch's soul): formed during sex with a magical being. Only ONE bond at a time. The partner can bond with unlimited witches.
+        Increases the witch's power and may grant traits from the partner (a bond with a fire dragon grants fire resistance and fire magic).</p>
+    </div>
+
+    <div class="danger">
+      <h3>Lunar Cycle</h3>
+      <p>A painful heat one day a month. The only day of fertility.</p>
+    </div>
+
+    <h2>Gender & Magic</h2>
+    <p>Anyone can be a mage or witch, but stereotypes persist. Male witches face
+       stigma; female mages meet social barriers.</p>
+
+    <h2>🐺Lycanthropy</h2>
+    <p>A magical disease that fuses human and feral nature. Werebeasts (werewolf,
+       werefox, werebear, etc.) possess enhanced senses, regeneration, pack telepathy, and lunar-driven transformation. Can form sympathetic bonds.</p>
+    
+    <div class="term">
+      <h3>Full Moon Pact</h3>
+      <p>Werebeast bond: formed with those dear to them (alpha, packmate, caretaker). Can maintain several bonds at once. Three recognized forms: intimacy/devotion (sex in werebeast form), camaraderie (ritual exchange), guidance (blood offering).</p>
+    </div>
+
+    <h2>Factions at a Glance</h2>
+    <div class="grid">
+      <div class="card"><div class="card-body">
+        <h3>🐙Octopus Coven</h3>
+        <p>A friendly coven near Fairhaven. Maintains natural balance, watches the
+           cemetery, cooperates with fairies. Founded by Zaira Veira, revived by Selena Veira.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🥀Black Vine Coven</h3>
+        <p>A large coven with a shady reputation in Noxland. Seeks eternal life through bloody rituals and
+           illegal experiments. Good public reputation; owns orphanages (raise children for experiments).</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🕊Dove Coven</h3>
+        <p>A small assassin coven of three witches who help those trapped by
+           failed sympathetic bonds. Communicate through doves; command a large mercenary family.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🐰Rabbit Coven</h3>
+        <p>Dawn's favorite coven. Men and women obsessed with procreation. Huge membership throughout the kingdom.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🐺Snow Wolf Coven</h3>
+        <p>An all-male coven in the north. One of the rare successful male covens.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>💀The All-Devouring Swarm</h3>
+        <p>A cult of necromancers who believe nature is unjust and everyone
+           deserves a life after death. Live in dungeons, minds connected into a network.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🐺The Family</h3>
+        <p>An official werewolf shelter founded by the alchemist Nora Feld. Ten
+           infected, each with their own goals.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🛡️Golden Lions</h3>
+        <p>One of the most prestigious knightly orders, granted by the King
+           himself.</p>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <h3>🧚The Fairy Council</h3>
+        <p>The collective name for all fairy clans occupying the kingdom's
+           forests.</p>
+      </div></div>
+    </div>
+
+    <h2>Pantheon</h2>
+    <ul>
+      <li><b>Deinin</b> — the creator, worshipped by commoners</li>
+      <li><b>Noon</b> — patron of magic and magicians, keeper of knowledge.</li>
+      <li><b>Dawn</b> — Mother Nature, goddess of witches. "Be fruitful and multiply."</li>
+    </ul>
+
+    <p class="flavor">This lorebook is a living project. More locations, characters, and stories are being added. Explore, enjoy, and feel free to reach out.</p>
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

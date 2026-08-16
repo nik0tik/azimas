@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Gods — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <h2>Pantheon</h2>
+    <p>The kingdom of Azimas has many gods. Cities and liege towns collect holy relics and memorabilia of saints (often fake) to boost church prestige. Devotion pervades daily life through rituals, holidays, fasts, and worship. Atheism is virtually unknown.</p>
+
+    <div class="term">
+      <h3>Deinin — The Creator</h3>
+      <p>The creator god, worshipped primarily by commoners throughout the kingdom. Deinin is seen as the origin of all existence, though specific rituals and depictions vary by region.</p>
+    </div>
+
+    <div class="character">
+      <img src="images/other/dawn_full.png" alt="Dawn">
+      <div class="character-text">
+        <h3>Dawn — Mother Nature</h3>
+        <p>Dawn is the goddess of nature: plants, animals, fish, and humans to some extent. She is the source of a coven's power and
+         the force behind the lunar cycle, driving her witches to "be fruitful and
+         multiply."</p>
+      </div>
+    </div>
+
+    <div class="character flip">
+      <img src="images/other/noon_full.jpg" alt="Noon">
+      <div class="character-text">
+        <h3>Noon — Patron of Magic</h3>
+        <p>Noon is the patron of magic and magicians, the keeper of knowledge and history.
+          Very secretive, rarely appears in public, and almost nothing is known about him. Mages' power source is unknown, but they lean toward Noon as their patron deity.</p>
+      </div>
+    </div>
+
+    <div class="danger">
+      <h3>Daimon — False Gods</h3>
+      <p>Daimon is a derogatory term for a being who claims to be a god but is not one (for example, someone who has created a cult around themselves, an all-powerful being living in the mortal world, and so on). Daimons NEVER call themselves that and hide their true nature. They are considered blasphemous and dangerous.</p>
+    </div>
+
+    <h2>Spirituality & Faith</h2>
+    <div class="term">
+      <h3>Religious Life</h3>
+      <p>Devotion pervades daily life through rituals, holidays, fasts, and worship. Atheism is virtually unknown. The kingdom of Azimas has many gods. Commoners mainly worship Deinin the creator. Witches draw power from Dawn. Mages' power source is unknown, but they lean toward Noon, patron of knowledge and magic.</p>
+    </div>
+
+    <p class="wip">⚠ More gods and religious practices coming soon.</p>
+
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

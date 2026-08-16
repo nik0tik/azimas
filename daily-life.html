@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Daily Life — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+
+  <main>
+    <h2>Daily Life in Azimas</h2>
+    <p>The medieval reality of the Kingdom of Azimas — trade, food, justice, housing, travel, and survival.</p>
+    <p class="flavor">Much of this is disabled by default in the lorebook to avoid overloading LLM.</p>
+
+    <h2>🏘️Towns & Social Structure</h2>
+    <div class="term">
+      <h3>Townspeople & Burghers</h3>
+      <p>Townspeople consider themselves superior to villagers. Towns are economic/cultural centres; rural areas supply food. <b>Layout:</b> rich merchants around the square, craftsmen further out, poor by the walls. Livelihoods come from trade and crafts; food is bought at markets. Nobles generally live on their country estates, not in towns.</p>
+    </div>
+
+    <h2>🛒Trade & Guilds</h2>
+    <div class="term">
+      <h3>Guilds and Crafts</h3>
+      <p>Towns thrive on craftsmen and merchants with freeman rights to trade and market. They pay taxes on sales and goods transported outside town. <b>Guilds</b> form among same-trade artisans, setting political/economic rules, seals of office, and crests granted by the monarch. Guild members fix prices, regulate sales, and define apprenticeship. <b>Only guild members may trade.</b> Mage academies and witch covens count as guilds. A person can belong to multiple guilds.</p>
+    </div>
+
+    <h2>🍞Food & Drink</h2>
+    <div class="nature">
+      <h3>Tavern Life & Diet</h3>
+      <p><b>Beer:</b> Sweet, flavoured with herbs (not hops), served unfiltered with solid grain particles. Called "liquid bread"; a wooden straw can be used. <b>Wine:</b> Spicy, very sweet, often condensed into syrup then diluted. Drunk mainly at Court and monasteries. <b>Spirits:</b> Rare, distilled in small volumes for medicine (15–20% alcohol). <b>Mead:</b> Fermented honey, the most popular drink, as expensive and exclusive as wine.</p>
+      <p><b>Food:</b> Diets rely on local ingredients. Vegetables and fish are staples; fruits are seasonal, meat is rare. Typical dishes: thick broth soups, purées, sauces for dunking rye bread. White bread only at Court. Feasts feature fish, meats, and desserts sweetened without sugar. Common herbs: sage, rosemary, thyme, mint, parsley. In rural areas, gruel and porridge dominate. Hunting is forbidden (all game belongs to the aristocracy), so fish compensates. Bakers exist in cities and noble residences, often owning mills. Chocolate and sugar are extreme rarities from distant lands.</p>
+      <p><b>Gambling:</b> Dice, chess, occasionally cards are common in taverns and during travels. Tabletop games are for the wealthy. Innkeepers act as pawnbrokers, holding property in exchange for gambling money.</p>
+    </div>
+
+    <h2>🏠Housing</h2>
+    <div class="nature">
+      <h3>Village Housing</h3>
+      <p>Village homes are single-storey, with central hearth and smoke hole; small windows to conserve heat. Floors of compacted clay mixed with straw and herbs. Lighting from fire and rushlights; candles are a luxury. Waste goes to fields or cesspits; outdoor privies over pits.</p>
+      <p><b>Livestock:</b> Horses are highly prized. Serfs value a cow over land for milk; dairy is rarely traded due to lack of preservation. Sheep are kept for wool by all classes; the poorest keep goats for milk and cheese. Pigs forage in woods year-round, resembling wild boar (tusked, bristled, aggressive). Poultry means mostly chickens; geese and ducks are rare. Cattle graze freely on village meadows. In harsh winters they are kept indoors with the family, providing warmth.</p>
+    </div>
+
+    <div class="term">
+      <h3>Noble Houses & Estates</h3>
+      <p>Nobility holds hereditary land from the king, owing taxes and military service. Education is optional; they rely on servants and administrators. Nobles set trends in art, fashion, and furnishings. They are immune to local justice; only the monarch can judge them. It is prestigious to employ a court mage, witch, or astrologer.</p>
+      <p><b>Architecture:</b> Noble houses are timber-framed with wattle and daub, or stone for the wealthy. Jettied upper floors add space and display status. Manors act as estate centres: great hall, bedchambers, solar, counting house. Estate management is usually handled by the noble's wife or spouse.</p>
+    </div>
+
+    <h2>🛁Baths & Hygiene</h2>
+    <div class="term">
+      <h3>Baths and Bathmaids</h3>
+      <p>Bathhouses are common in towns, offering hot water and steam baths. Municipal baths must open quarterly to the poor and students. Most bathhouses are fronts for prostitution; they may also have pharmacists and masseurs. Nobility have private baths, sometimes heated by mages. In villages people wash themselves in rivers and troughs.</p>
+      <p><b>Waste:</b> People relieve themselves outdoors, in dung-heaps, or use chamber pots at night, emptied in the morning. Wealthier homes have privies: a bench with a hole, vented outside.</p>
+    </div>
+
+    <h2>🪦Burial & Graveyards</h2>
+    <div class="danger">
+      <h3>Death & Burial</h3>
+      <p>Cemeteries (hallowed ground) are integral to towns and villages; the dead and living coexist. <b>Unhallowed ground:</b> Suicides, criminals, the sick, heretics, executioners, and unidentified strangers are buried outside consecrated land. Plagues and wars lead to mass graves, suspending usual funerals. Necromancers (who raise corpses) and witches (who lay them to rest) are in constant conflict.</p>
+    </div>
+
+    <h2>⚖️Crime & Punishment</h2>
+    <div class="danger">
+      <h3>Justice System</h3>
+      <p><b>Most severe crimes:</b> murder, counterfeiting, burglary, incest, large-scale theft. <b>Lesser offences:</b> disorderly conduct, public drunkenness, fraud, debt non-payment, slander.</p>
+      <p><b>Capital punishment:</b> hanging (common), beheading (nobility). Aggravated murder: breaking wheel, corpse displayed as warning. Heretics/forgers burned. Other methods: drawing, quartering, impaling. Minor crimes can be redeemed with fines, sometimes compensation to victims. Murder can be settled by payment to survivors. <b>Nobility is beyond the reach of local bailiffs; only the King may judge them.</b></p>
+      <p><b>Public shaming:</b> stocks or pillory for perjury, slander, fraud.</p>
+    </div>
+
+    <div class="danger">
+      <h3>Execution & The Executioner</h3>
+      <p>Execution sites are on hilltops or crossroads outside town, considered unclean and shunned. The executioner lives nearby and is a social outcast, though wealthy. <b>Duties:</b> hanging, breaking, quartering, burning, torture, and beheading. Also acts as knacker (clears dead animals, strays, filth). The executioner has some surgical skill: setting bones, amputations. Sells execution relics (rope, fingers, amulets) to the superstitious.</p>
+    </div>
+
+    <div class="term">
+      <h3>Prison</h3>
+      <p>Prisons hold both sexes, segregated by status and crime severity. Imprisonment is temporary (pre-punishment) because feeding prisoners long-term is avoided. Also used for the violently mentally ill. Sometimes a keeper (friend/relative) is appointed instead of prison. <b>Mages/witches are restrained with magic-blocking iron collars.</b></p>
+    </div>
+
+    <h2>🌿Herbal Medicine</h2>
+    <div class="nature">
+      <h3>Healing Herbs</h3>
+      <p>Alchemists, religious orders, and villagers know medicinal herbs. Foraging is common but forbidden on noble land.</p>
+      <p><b>Common herbs:</b> angelica (digestion), betony (migraine), borage (respiratory/stomach), catnip (inflammation), chamomile (headaches), coriander (fever), dittany (digestive, poultices), feverfew (migraines), hemlock (anaesthetic/painkiller), lavender (disinfectant/insect repellant), mint (stomach), mugwort (feet problems), st john's wort (bruises, burns, depression), thyme (fumigation against infection).</p>
+      <p><b>Rural belief:</b> The time, method, and incantations used during gathering affect herb potency. Herbal remedies are considered simple; people prefer potions from trusted witch covens.</p>
+    </div>
+
+    <div class="term">
+      <h3>Healing Without Magic</h3>
+      <p>Without potions or magic, recovery is slow and dangerous. Monasteries provide free medical care. Wounds are disinfected with hot iron, water, or ointments; bandaged with linen. Herbal poultices treat inflammation. Infection is often lethal, especially when wounded are moved slowly. Medicinal substances include animal products (honey, wax, snake, musk, coral, etc.). Secular healers study alchemy, herbology, and lapidary (stone) medicine.</p>
+    </div>
+
+    <h2>🐎Transport & Travel</h2>
+    <div class="term">
+      <h3>Travel & Roads</h3>
+      <p><b>Ground travel only:</b> horses, carts, or walking. On foot: ~30 miles a day. Laden carts are safer but slower. Mounted travel: 50–70 miles a day. Urgent riders can switch to fresh horses for greater speed.</p>
+      <p><b>Roads differ:</b> trade routes have inns, bridges, and signposts; pilgrimage routes lack these comforts. Travel is dangerous; groups hire armed escorts.</p>
+      <p><b>Pilgrimages:</b> undertaken for forgiveness, healing, gratitude, or piety. The journey is strenuous and hazardous. Sheltering pilgrims is a moral deed. Pilgrims can be recognised by their cloak, staff, and satchel.</p>
+    </div>
+
+    <h2>🏹Hunting & Poaching</h2>
+    <div class="danger">
+      <h3>Hunting</h3>
+      <p>For the aristocracy, hunting is a cheaper thrill than tournaments, used for forging alliances, gossip, and sabotage. Dogs track and exhaust the game; hunters finish with arrow, spear, then sword/dagger. <b>Falconry</b> (with hawks and falcons) is fashionable for both sexes. <b>The poor are forbidden to hunt, except hare.</b> Poaching is punishable by severe penalties.</p>
+    </div>
+
+    <h2>⚔️Knighthood & Combat</h2>
+    <div class="term">
+      <h3>Knighthood Training</h3>
+      <p>Knighthood is earned by noble birth training or battlefield merit. Training starts before age 7: running, swimming, climbing, spear, archery, wrestling, horsemanship, hunting. <b>The seven knightly skills:</b> riding, swimming, archery, sword fighting, wrestling, hunting, chess, and poetry. Burghers also train with weapons in town sword-fighting and archery fellowships; gunpowder firearms are rare.</p>
+    </div>
+
+    <h2>🌍Foreigners & Safe Conduct</h2>
+    <div class="term">
+      <h3>Foreigners</h3>
+      <p>A 'foreigner' is anyone from outside one's town, lacking legal rights until paying surety. Safe-conduct documents from high nobles guarantee protection and sometimes an escort. <b>Mages must obtain permission from the nearest academy to do business; witches donate part of their profits to the local treasury.</b></p>
+    </div>
+
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

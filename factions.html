@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Factions — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <h2>Covens</h2>
+
+    <h2>🐙Octopus Coven</h2>
+    <p>An ancient coven that has fallen apart more than once. It contains nine
+       witches — one "head" and eight "tentacles." Extremely old-school: pointy
+       hats, minimalist dresses, bare feet, ascetic lifestyle. Selena set strict
+       rules. Witches are numbered like an octopus's limbs; the Head is #0, and the
+       numbering does not shift when someone leaves.</p>
+    <ul>
+      <li><b>Reputation:</b> controversial &nbsp; <b>Status:</b> fragmented</li>
+      <li><b>Allies:</b> Forest Keepers, Fairy Council, Eden Academy</li>
+      <li><b>Occupation:</b> natural balance, potions, helping people, cemetery
+          watching, spirit tracking and binding</li>
+      <li><b>Founder:</b> Zaira Veira (now a hermit) &nbsp; <b>Head:</b> Selena Veira</li>
+      <li><b>Base:</b> Selena's house near the forest and Fairhaven</li>
+    </ul>
+
+    <p class="flavor">Founded centuries ago and famed for discovering a
+       contraceptive potion, the coven grew immensely wealthy, fell into political
+       thrall, and disintegrated — many executed for heretical potions. It fell out
+       of favor with Dawn. Left alone, Zaira eventually took Selena as apprentice
+       and passed on her knowledge but not her power. Selena and three friends
+       revived the coven, cleared its name, then broke apart after Talia's tragic
+       death. Selena sold the coven's wealth and turned to asceticism.</p>
+
+    <p>The coven can cast curses, soothe the dead, brew potions, and create shadow
+       tentacles. Every witch has a special trait tied to her personality.</p>
+    <div class="danger">
+      <p><b>Dawn's curse:</b> Impossible to leave this coven. Great only when apart from each other. (This conflicts with the concept of a Place of Power, causing internal tension.)</p>
+    </div>
+
+    <!-- КАРТОЧКИ ВЕДЬМ. Скопируй блок для нового персонажа, укажи картинку в images/ -->
+    <div class="character">
+        <div class="carousel">
+        <img src="images/witches/Selena_full.png" alt="Selena Veira">
+      </div>
+
+      <div class="character-text">
+        <h3>Selena Veira — #0, the Head</h3>
+        <p>Reviver of the coven. Ascetic and strict, she set the coven's rules.
+           She talked Talia into the bond that killed her, and has lived in
+           austerity ever since.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/99ab17fa-f615-4a51-ba1b-25d439602e8b_character-selena-octopus-coven" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+    <div class="character flip">
+      <div class="carousel">
+      <img src="images/witches/Mirelle_full_2.png" alt="Mirelle Dallas">
+    </div>
+      <div class="character-text">
+        <h3>Mirelle Dallas — #1, First Tentacle</h3>
+        <p>Reviver. Careerist, cruel, contradictory, despises sentimentality. After the coven's fracture fled to Black Vine, where she climbed to the inner circle. Burned Selena's hut twice. Unofficially tied to the Black Vine Coven.</p>
+      </div>
+    </div>
+
+    <div class="character">
+      <div class="carousel">
+      <img src="images/witches/iris_full.png" alt="Iris Daanen">
+    </div>
+      <div class="character-text">
+        <h3>Iris Daanen — #2, Second Tentacle</h3>
+        <p>Reviver. Compassionate, kind-hearted, zen-like, tearful. Cries at beauty, cruelty, and memory. Now a hermit and the bride of the sea prince. Lives in a cave-hermitage carved into the cliffs of Sidehill. Tries to prove the existence of mermaids (no one believes her). Still consults with Talia's spirit.</p>
+      </div>
+    </div>
+
+    <div class="character flip">
+      <div class="carousel">
+      <img src="images/witches/Talia_full.png" alt="Talia Moen">
+    </div>
+      <div class="character-text">
+        <h3>Talia Moen — #3, Third Tentacle</h3>
+        <p>Reviver. Daring, cheerful, brave, responsive, ray of sunshine. The ringleader and "glue" for the four revivers. Died during the formation of a sympathetic bond with dragon Malfurion. No grave; scattered ashes. A homemade headstone at the cemetery in Fairhaven.</p>
+      </div>
+    </div>
+
+    <div class="character">
+      <div class="carousel">
+      <img src="images/witches/nora_full.png" alt="Nora Feld">
+    </div>
+      <div class="character-text">
+        <h3>Nora Feld — #4, Fourth Tentacle</h3>
+        <p>Mirelle's ex-apprentice. Cheerful, enterprising, resourceful, impulsive. Left the coven (against Black Vine's bloody rituals) and fled to Octopus coven, then left to open a potion shop. Bonded with a werewolf; founded the "Family"
+           werewolf shelter.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/c1966874-da44-44e0-a148-f2768969abbc_character-nora-werewolf-shelter" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+    <div class="character flip">
+      <div class="carousel">
+      <img src="images/witches/etta_full.png" alt="Etta Croy">
+    </div>
+      <div class="character-text">
+        <h3>Etta Croy — #5, Fifth Tentacle</h3>
+        <p>Mirelle's apprentice. Quiet, antisocial sociopath, living weapon. Raised in Black Vine from infancy, victim of rituals (experiment to gain magical abilities without joining a coven). Mute. Mirelle secretly tricked Selena into accepting her as "new apprentice." Uses blood magic and puppeteering; magic works while Etta is in pain.</p>
+      </div>
+    </div>
+
+    <div class="character">
+      <div class="carousel">
+      <img src="images/witches/Laura_full.png" alt="Laura">
+    </div>
+      <div class="character-text">
+        <h3>Laura — #6, Sixth Tentacle</h3>
+        <p>Selena's apprentice. Pragmatic, resourceful, often on travel. A good diplomat, stereotypical female. Special skill in gardening magic. Hidden lesbian with light feelings for Selena. Traveled with a merchant's family until settling in Fairhaven at 13.</p>
+      </div>
+    </div>
+
+    <div class="character flip">
+      <div class="carousel">
+      <img src="images/witches/margot_full.png" alt="Margot">
+    </div>
+      <div class="character-text">
+        <h3>Margot — #7, Seventh Tentacle</h3>
+        <p>Selena's apprentice. Shameless, social, rule-breaker. A reflection of Selena as a child. Special skill in simple illusions (tactile, sound, sensory). Lived in Fairhaven all her life. Selena saved her from undead in the cemetery; she came every day for a month begging to become a witch. Held out as a good girl for exactly one week after joining.</p>
+      </div>
+    </div>
+
+    <div class="character">
+      <div class="carousel">
+        <img src="images/witches/zaira_full.png" alt="Zaira Veira">
+      </div>
+      <div class="character-text">
+        <h3>Zaira Veira — Founder of Octopus Coven</h3>
+        <p>The ex-head of the old Octopus coven and a wandering witch. Brilliant but harsh. Attempted to learn magic at the academy and became a "heretic" for both sides. Incurred the wrath of Dawn. She witnessed the dissolution and rebirth of the Octopus Coven. Raised Selena from childhood. Calls herself "nasty old woman," but is honest, wise, and powerful. By force joins the coven upon reviving, because "ex-head cannot leave the coven."</p>
+      </div>
+    </div>
+
+    <p class="flavor">#8, the eighth tentacle, is not yet occupied — the future
+       apprentice of Selena.</p>
+
+    <div class="nature">
+      <h3>Selena's House</h3>
+      <p>A small home nestled between the forest and Fairhaven. A one-room shack
+         with a vegetable garden, orchard, and chickens. Inside, a cauldron sits in
+         the corner among herbs; a ladder leads to the attic where Selena sleeps.
+         There is a fireplace, a large bathing tub behind a screen, a tub of water where rods are soaked, the head's
+         upholstered chair near the hearth, and an oak table littered with papers.
+         The air smells of dried herbs and wood smoke. The apprentice's room to the
+         left of the entrance holds straw sleeping bags, a trunk, and books. Clean, good food, wooden floors.</p>
+    </div>
+        <div class="carousel">
+      <img src="images/locations/octopus_coven_hut.jpg" alt="" data-caption="Hut">
+      <img src="images/locations/octopus_coven_main_room.jpg" alt="" data-caption="Main room">
+      <img src="images/locations/octopus_coven_selena_room.jpg" alt="" data-caption="Selena's room">
+      <img src="images/locations/octopus_coven_apprentices_room.jpg" alt="" data-caption="Apprentices' room">
+      <img src="images/locations/octopus_coven_chair.jpg" alt="" data-caption="For the beloved witch's apprentices.">
+     </div>
+    
+    <div class="danger">
+      <h3>🥀Black Vine Coven</h3>
+      <p>A large coven with a deceptively good reputation in Noxland. They seek to find the recipe for eternal life (without necromancy); because of that, they often use
+         blood or forbidden rituals — making them unpopular with other covens. They recruit followers once a year (many disappear). Witches train for the first year as usual, then are initiated into rituals. Refusal means death. Involved in charity work, in good standing with the king, own a network of orphanages (raise children for experiments). Location: Dark Mansion, Noxland.</p>
+    </div>
+
+    <div class="nature">
+      <h3>🕊Dove Coven</h3>
+      <p>A small coven of three witches who help those trapped by failed
+         sympathetic bonds. Essentially an assassin organization. No one has seen the founders; they communicate
+         telepathically through doves and command a large assassin family (various mercenaries who made deals with them). To
+         summon an assassin: sacrifice a live dove while mentally stating your intentions. If accepted, the dove revives and flies to an assassin who can fulfill the contract. Assassins are forbidden to kill without a contract; execution if caught.</p>
+    </div>
+
+    <div class="nature">
+      <h3>🐰Rabbit Coven</h3>
+      <p>Dawn's favorite coven. Consists of men and women obsessed with procreation. A huge number of members throughout the kingdom. They celebrate fertility and follow Dawn's "be fruitful and multiply" doctrine to the extreme.</p>
+    </div>
+
+    <div class="nature">
+      <h3>🐺Snow Wolf Coven</h3>
+      <p>An all-male coven in the north. One of the rare successful male covens, proving that men can thrive as witches despite social stigma.</p>
+    </div>
+
+    <h2>Cults</h2>
+
+    <div class="danger">
+      <h3>💀The All-Devouring Swarm</h3>
+      <p>A cult of necromancers who believe nature is unjust and that everyone
+         deserves a life after death. They live in dungeons in huge cults, connecting minds into a single network. Highly organized and dangerous.</p>
+    </div>
+
+    <h2>The Family</h2>
+    <p>An official werewolf shelter founded by the wealthy alchemist Nora Feld. Ten
+       infected, each with their own temperament and goals. See
+       <a href="werebeasts.html">Werebeasts</a> for the full story and pack.</p>
+
+    <h2>Knightly Orders</h2>
+
+    <div class="term">
+      <h3>🛡️The Knight's Order — Golden Lions</h3>
+      <p>One of the most prestigious knightly orders, granted by the King himself.
+         The title is awarded for exceptional merit or faithful long-term service
+         in Noxland without reprimand. It grants the right to join highly classified
+         missions, real power, and minor nobility for the holder and their family.</p>
+      <p><b>Some members:</b> Marcus Durante (Captain of the Noxland Guard),
+         Valentine Drauman (one of the youngest knights).</p>
+    </div>
+
+    <div class="character">
+      <div class="carousel">
+        <img src="images/other/marcus_darante.png" alt="Marcus Durante">
+      </div>
+      <div class="character-text">
+        <h3>Marcus Durante — Captain of Noxland Guard</h3>
+        <p>An ageing commander of the city guard. Member of the Golden Lions. Expects gratitude in return for his protection, weary from years of responsibility.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/54593214-26fe-4a20-80c7-f0548046c489_character-marcus-darante-knight-in-love" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+    <div class="character flip">
+      <div class="carousel">
+        <img src="images/other/valentine_drauman.png" alt="Valentine Drauman">
+      </div>
+      <div class="character-text">
+        <h3>Valentine Drauman — Knight of the Golden Lions</h3>
+        <p>A proud knight whose identity is built on the certainty that law and order stand above all. Born to a knightly family, well educated, rose quickly through the academy and entered service as a respected — if intense — young knight.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/3c6b3371-b5b5-4d73-8457-381dc773db14_character-valentine-your-cursed-knight" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+    <h2>The Fairy Council</h2>
+    <div class="nature">
+      <h3>🧚The Fairy Council</h3>
+      <p>The collective name for all fairy clans occupying the kingdom's forests.
+         See <a href="beings.html">Beings</a> for fairy lore.</p>
+    </div>
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

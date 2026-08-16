@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Beings — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <h2>🧚Fairies</h2>
+    <p>Fairies are fragile and small — hand-sized (10–20 cm), faintly magical, and
+       capable of flight. Befriending one is said to bring both luck and misery.
+       They generally appear as humans with long ears, colored skin and hair, and
+       beetle wings of various shapes. They live in forests and communities,
+       governed by elders, and rarely venture into cities.</p>
+    <ul>
+      <li>Elders can bless ordinary people, granting the ability to transform into
+          fairies and access to illusion magic, glamour, and nature abilities.</li>
+      <li>The <b>Fairy Council</b> is the collective name for all fairy clans in the
+          kingdom's forests.</li>
+      <li><b>Behavior:</b> depends on the fairy — typically playful; they feed on
+          positive human emotions.</li>
+      <li><b>Everyday life:</b> homes in hollows and mushrooms, made of natural
+          materials; they love human things as gifts.</li>
+    </ul>
+
+    <div class="danger">
+      <h3>Marking</h3>
+      <p>If a fairy commits crimes or social violations, the council can "mark"
+         them by changing their appearance to a repulsive one — grey wrinkled skin,
+         sharp teeth, hypertrophied features.</p>
+    </div>
+
+    <h2>Fairy Reproduction</h2>
+    <div class="nature">
+      <h3>Fairy Physiology & Birth</h3>
+      <p><b>Male fairies</b> have a long (7-12 cm in fairy form or 25-40 cm in human form), thin reproductive organ like a mosquito's proboscis.</p>
+      <p><b>Female fairies</b> have external genitalia, but lack a uterus and ovaries. They are sterile and cannot conceive.</p>
+      <p><b>How fairies are born:</b> Fairies are born from flowers. A female chooses a suitable flower and pollinates it with her fairy pollen. The male then lays 1 to 5 soft eggs (usually in March). Both parents maintain a temperature of 20-27°C and monitor the clutch. After 6 months (by August, for example), the eggs hatch as wingless micro-babies.</p>
+      <p><b>Half-breeds:</b> Half-fairies are incredibly rare. A human (of either gender) can carry fairy eggs, but due to their body temperature, survival rates are low. No one has proven whether such children share the blood of their "mother," but they may magically resemble each other in appearance.</p>
+    </div>
+
+    <div class="character">
+      <img src="images/other/zephyr_ava.png" alt=" Zephyr">
+      <div class="character-text">
+        <h3>Zephyr</h3>
+        <p>Zephyr is a naive, gentle fairy unfit for life among humans. Even after years of traveling and hard lessons, he remains a blank page of trust and his own principles of total forgiveness.
+          Strange even among the capital’s fashion-obsessed elites in their gaudy outfits and eccentric mages, he runs a not very profitable flower shop, struggles with bureaucracy, and dreams of bringing the beauty of nature to the masses.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/6881cd77-3786-4c58-a478-118ec666f13e_character-zephyr-sweet-fairy" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+    <h2>🐲Dragons</h2>
+    <p>Ancient magical reptiles, often depicted as giant winged scaly creatures
+       with four paws, capable of shapeshifting into humanoid forms. Appearances
+       and temperaments vary wildly, but all dragons share an intense, instinctual
+       possessiveness over their hoard and territory. Solitary by nature, they
+       tolerate other dragons only for brief mating periods or disputes; a dragon's
+       lair is their absolute sovereign domain. They are often targeted by witches
+       to form a bond.</p>
+
+    <div class="character">
+      <img src="images/other/malfurion_ava.png" alt="Malfurion">
+      <img src="images/other/malfurion_dragon.png" alt="Malfurion">
+      <div class="character-text">
+        <h3>Malfurion</h3>
+        <p>An ancient Sidehill dragon ruled by appetite, possession, and pride. His lair lies on the far side of the Iron-Shoulder Range.</p>
+      <p><div class="contact-links"><a href="https://janitorai.com/characters/9864b760-cc01-4749-84c3-5021be9e03c4_character-malfurion-dragon-husband" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+    <h2>🐠Merfolk</h2>
+    <div class="term">
+      <h3>Mermaids & Mermen</h3>
+      <p>Mermaids are divided into two types: sea and river.</p>
+      <p><b>Sea merfolk:</b> Legends only. People with the tails of various fish. They live in underground grottoes in large schools led by kings. They lay eggs, can take human form, and breed with humans. Rumors persist in Whitevale, but no one has proven their existence.</p>
+      <p><b>River merfolk (Rusalki):</b> Drowned spirits. Thin people with greenish-pale skin, long hair, naked or in shirts. They lure, drown, and tickle people to death. Deadly and malevolent.</p>
+    </div>
+
+    <div class="carousel">
+      <img src="images/other/merfolks_types.png" alt=""></a>
+     </div>
+  
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

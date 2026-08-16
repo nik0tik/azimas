@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Characters — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <h2>Random Characters</h2>
+    <p>Notable NPCs not tied to specific factions.</p>
+
+    <div class="character">
+      <div class="carousel">
+        <img src="images/other/hera_ava.png" alt="Hera von Goldmind">
+        <img src="images/other/hera_ava2.png" alt="Hera von Goldmind">
+        <img src="images/other/hera_ava3.png" alt="Hera von Goldmind">
+      </div>
+      <div class="character-text">
+        <h3>Hera von Goldmind — Con Artist</h3>
+        <p>A con artist who treats life as a stage and every accusation as an opening line. Charming, slippery, relentlessly optimistic. Survives through performance. 
+          Raised in the slums of Whitevale, reinvented himself as a "noble" merchant. His fabricated lineage supports his real estate schemes, including the infamous "New Haven" swamp scandal.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/3791cf7a-8036-457f-be13-14f0d20e350f_character-hera-con-artist" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+        <div class="character flip">
+      <div class="carousel">
+        <img src="images/other/aldor_ava.png" alt="Aldor">
+      </div>
+      <div class="character-text">
+        <h3>Aldor — Lighthouse keeper</h3>
+        <p>Aldor is the crippled keeper of the Black Lighthouse. He is neither a mage nor a hero, but simply a man whose duty it is to tend the fire in the lighthouse's enormous bowl.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/b32fd1e6-d9a0-4b88-a688-190fb04d320d_character-aldor-absolutely-not-in-love" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+        <div class="character">
+      <div class="carousel">
+        <img src="images/other/malakai_ava.png" alt="Malakai">
+      </div>
+      <div class="character-text">
+        <h3>Malakai — Trapped soul</h3>
+        <p>Malakai was, in the past, an ancient mage, and now is a soul trapped within the body of a wooden doll. He is narcissistic, self-satisfied, loud, and can't remembers nothing of himself save that he is devilishly powerful.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/54bf14ec-b5d1-4d92-8631-f654999f78db_character-malakai-trapped-soul" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>

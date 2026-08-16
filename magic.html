@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Применяем тему ДО рендеринга, чтобы не мерцало -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('azimas-theme') || 'dark';
+      if (theme !== 'dark') {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+  <title>Magic — Azimas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>KINGDOM OF AZIMAS</h1>
+  <p>Lorebook</p>
+  <div class="theme-switcher">
+    <button data-theme="dark">✮ Dark</button>
+    <button data-theme="light">📜 Light</button>
+  </div>
+</header>
+
+
+
+  <main>
+    <h2>Magic</h2>
+    <p>Humans with magic split into <b>mages</b> (innate, academic power) and
+       <b>witches</b> (nature-granted, ritual power).</p>
+
+    <h2>Mages</h2>
+    <ul>
+      <li>Mages are connected to study and willpower. Deity: Noon.</li>
+      <li>Magic is hereditary and appears at birth.</li>
+      <li>Power grows through learning, symbols, and disciplined practice. Spells
+          combine and — very rarely — invent new symbols.</li>
+      <li><b>Style:</b> structured, academic — incantations, circles, runes, formulas</li>
+      <li><b>Tone:</b> scholars, arcane scientists</li>
+      <li><b>Source:</b> innate power, knowledge, intellect</li>
+    </ul>
+    <p>There are few good mages and their services are very expensive.</p>
+
+    <div class="term">
+      <h3>Sage</h3>
+      <p>A title for the strongest mages. To become a Sage you must have merit
+         before the kingdom, tutor at least one apprentice (who passes the exam),
+         and teach for more than two years at a magic academy. Sages may study a
+         second branch and mix two schools to cast unusual spells. Highly
+         respected.</p>
+    </div>
+
+    <h2>Gender and Magic</h2>
+    <p>Men can become witches, and women can become mages. It is not forbidden,
+       but countless stereotypes stand in the way. Statistically men more often
+       attend the Academy. Male mages treat female mages far more neutrally than
+       what happens among witches: a man who joins a coven is often seen as an
+       outcast by both sides.</p>
+    <ul>
+      <li>At least one successful all-male coven is known, as well as several female Sages.</li>
+      <li>Among witches, about 5% are men.</li>
+      <li>Among mages, about 20% are women.</li>
+    </ul>
+
+    <h2>Magical Branches</h2>
+    <p>Most spells are limited by the caster's knowledge of ancient runes, their
+       creativity in combining them, and their individual strength. Practical
+       witchcraft is inaccessible to mages. Witches cannot use anything beyond
+       witchcraft and necromancy — except for abilities gained through a
+       sympathetic bond.</p>
+
+    <div class="term">
+      <h3>Magic Rules</h3>
+      <ul>
+        <li>Every mage can wield only one branch of magic.</li>
+        <li>Every Sage can wield two branches and combine them.</li>
+        <li>All mages without exception can use basic household magic.</li>
+        <li>Each branch has its own side effects for the mage.</li>
+      </ul>
+    </div>
+
+    <h2>🔥Elementalism</h2>
+    <p>Mastery of the natural forces. Manipulation, generation, and shaping of
+       natural elements and their combinations. Usually a mage controls one or two
+       elements and their combination.</p>
+    <ul>
+      <li><b>Primary:</b> Fire, Water, Air, Earth</li>
+      <li><b>Advanced:</b> Lightning, Ice, Lava, Crystal, Storms, Mist, Metal, Sand</li>
+      <li>Create or control elemental forces; alter the state of materials; combine
+          into hybrids; enhance allies with elemental traits; shape terrain in
+          limited ways.</li>
+    </ul>
+    <div class="danger">
+      <h3>Side Effect</h3>
+      <p>Elementalism makes the mage starve and tire faster. After prolonged use
+         one feels very hungry and drowsy. Exhaustion can lead to death. The more
+         skilled the mage, the fewer the side effects.</p>
+    </div>
+
+    <h2>💊Restoration</h2>
+    <p>Magic of healing, protection, and vital reinforcement. Positive energy
+       channeled to strengthen, heal, purify, and protect life.</p>
+    <ul>
+      <li>Heal injuries; restore stamina, clarity, courage.</li>
+      <li>Cleanse poison, fatigue, curses (higher tiers).</li>
+      <li>Create barriers, resistances, temporary empowerment.</li>
+      <li><b>Style:</b> gentle, radiant, protective. Warm light, sigils. Color: Yellow.</li>
+    </ul>
+    <div class="danger">
+      <h3>Side Effect</h3>
+      <p>The patient's pain and effects transfer to the mage who cast the spell.
+         For a time the mage may feel the same pain, curses, or potion effects
+         they removed. The more experienced, the fewer the side effects.</p>
+    </div>
+
+    <h2>👻Occultism</h2>
+    <p>Command of spirits, shadows, and the unseen. Manipulation of spiritual
+       entities, illusions, echoes, and the immaterial veil between realms.</p>
+    <ul>
+      <li>Sense, communicate with, or influence non-corporeal spirits.</li>
+      <li>Create illusions, phantoms, spectral constructs.</li>
+      <li>Distort perception, emotion, or the boundary between realms.</li>
+      <li>Summon temporary incorporeal helpers (not undead).</li>
+      <li><b>Style:</b> ethereal, eerie. Soft whispers, flickering shapes. Color: Violet.</li>
+    </ul>
+    <div class="danger">
+      <h3>Side Effect</h3>
+      <p>Risks of physical/mental corruption (soulburn, mutation, madness),
+         reality distortion, spiritual servitude, soul erasure, loss of power. The
+         more skilled, the fewer the side effects.</p>
+    </div>
+
+    <h2>💎Transmutation</h2>
+    <p>Alteration of matter, form, and space — without elemental or spiritual
+       influence. This is ONLY form modification. Altering composition is done
+       through alchemy and is available only to witches.</p>
+    <ul>
+      <li>Change properties or shape of materials (soften metal, harden wood).</li>
+      <li>Temporarily alter forms — size, texture, minor morphology.</li>
+      <li>Rearrange matter into simple items or modify structures.</li>
+      <li>Manipulate spatial phenomena (short teleports, folds, compression).</li>
+      <li>Affect gravity or weight in small, controlled ways.</li>
+    </ul>
+    <div class="danger">
+      <h3>Side Effect</h3>
+      <p>Risk of uncontrolled restructuring — explosions, mutations, and the
+         inability to transform back without help. The more skilled, the fewer the
+         side effects.</p>
+    </div>
+
+    <h2>Household Magic</h2>
+    <p>Everyday practical sorcery. The most basic magic, learned in the first year
+       at the academy. All mages know it.</p>
+    <ul>
+      <li>Produce light, warmth, cleanliness, scent, minor comforts.</li>
+      <li>Move, sort, lift, or organize objects of non-threatening scale.</li>
+      <li>Repair mundane damage; maintain domestic spaces; assist with chores.</li>
+    </ul>
+
+    <div class="danger">
+      <h3>Necromancy — Forbidden</h3>
+      <p>Dominion over death-energy, decay, and severance — <b>not</b> raising the
+         dead. Reanimation of corpses and binding a soul to a body are blasphemous
+         and absolutely forbidden.</p>
+      <p>What it can do: sense death-energies and decay; sever or weaken spiritual
+         bonds and curses; inflict deterioration, weakness, fear, or entropy;
+         suppress life force in a zone; corrode objects.</p>
+      <p><b>Style:</b> cold, quiet, solemn. Pink energies, mists, severing motifs.</p>
+    </div>
+
+    <h2>⚗️Alchemy</h2>
+    <div class="nature">
+      <h3>Alchemy</h3>
+      <p>A discipline combining magic, chemistry, and natural philosophy, taught and controlled by witches. It covers potion-making and metal transmutation. Alchemists work in medicine, smelting, minting, mining, glass-works, and industry, often alongside Transmutation mages. The work is difficult and costly; ingredients are gathered, traded, or bought. Successful alchemists gain wealth and fame; failures face prison or execution.</p>
+      <p><b>Forbidden:</b> Contraceptive potions and gold transmutation are strictly illegal to protect birth rates and the economy.</p>
+    </div>
+
+    <h2>✨Astrology</h2>
+    <div class="term">
+      <h3>Astrology & Astronomy</h3>
+      <p>Astrology is applied astronomy, closely tied to alchemy and physics. Fate is seen as divine will expressed through stars and planets. Astrologers produce star charts, calendars, and navigation tables. Celestial movements influence politics, war, marriage, medicine, and agriculture. Astrologers use astrolabes, sextants, quadrants, and sundials. The field is highly respected; many astronomers are also astrologers.</p>
+    </div>
+
+    <h2>Eden Academy</h2>
+    <p>The main institution for mage education. A castle that looks more like a
+       huge manor with its own dormitory and four branches of study. A separate
+       wing teaches astrology and medicine, but these are not considered magical
+       and are usually taught privately by hired tutors. Household magic taught to all.</p>
+    <p>Faculties have their own colors:</p>
+    <ul>
+      <li>Elementalism (red)</li>
+      <li>Restoration (yellow)</li>
+      <li>Occultism (violet)</li>
+      <li>Transmutation (green)</li>
+      <li>Astrology (grey robes)</li>
+      <li>Non-magic medicine (white robes)</li>
+      <li>Unassigned students wear black</li>
+    </ul>
+   
+    <div class="term">
+      <h3>The Great Library</h3>
+      <p>A huge multi-tiered hall in one of the towers. An endless series of cabinets and stairs. Four access levels:</p>
+      <ul>
+        <li><b>Level 1:</b> Public with mage escort. Basic magic, diaries, historical scrolls. Serves as noble training ground and museum.</li>
+        <li><b>Level 2:</b> Students and above. Textbooks, manuals, treatises.</li>
+        <li><b>Level 3:</b> Teachers and above. Smaller section; dangerous, rare knowledge.</li>
+        <li><b>Level 4:</b> Sages only. Secret, highly dangerous knowledge. Nicknamed the "secret section."</li>
+      </ul>
+    </div>
+    <div class="carousel">
+      <img src="images/locations/Edan.jpg" alt="" data-caption="Eden Academy">
+     </div>
+    <h2>Some mages</h2>
+
+    <div class="character">
+        <div class="carousel">
+        <img src="images/other/COMING_SOON.png" alt="Kaelen Thorn">
+      </div>
+
+      <div class="character-text">
+        <h3>Kaelen Thorn — Dean of the Faculty of Occultism</h3>
+        <p>Powerful Sage, occult and transmutation mage, Dean of the Faculty of Occultism at the Eden Academy. Calm, steady, sharp-tongued gentleman. Married/bonded to Selena Veira.</p>
+      </div>
+    </div>
+    <p class="flavor">I know Kaelen Thorne is an AI slop name. He's Marty Sue, that's the idea.~</p>
+
+    <div class="character flip">
+      <div class="carousel">
+      <img src="images/other/trex_ava.png" alt="Trex Phantasm">
+    </div>
+      <div class="character-text">
+        <h3>Trex Phantasm — Restoration professor</h3>
+        <p>His long-term dream is to become a Sage, study occultism. Anxious brilliance with covert manipulation. He quick, twitchy, sugary, sarcastic, and theatrically offended. He HATES teaching his student.</p>
+        <p><div class="contact-links"><a href="https://janitorai.com/characters/a6273b4b-5175-43c6-baac-2e5fd013eddc_character-trex-your-socially-awkward-mentor" target="_blank">JanitorAI</a></div></p>
+      </div>
+    </div>
+
+  </main>
+  <script src="nav.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="theme-switcher.js"></script>
+</body>
+
+</html>
