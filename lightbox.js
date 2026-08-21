@@ -57,14 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('main img:not(.no-zoom)').forEach(function (img) {
     img.classList.add('zoomable');
     img.addEventListener('click', function (e) {
-      e.preventDefault();   // гасим переход по ссылке-обёртке, если есть
-      // группа = соседи по .carousel или .gallery, иначе одиночка
-      const container = img.closest('.carousel, .gallery');
+      e.preventDefault();
+      const container = img.closest('.carousel, .gallery, .gallery-grid');
       const imgs = container
         ? Array.from(container.querySelectorAll('img:not(.no-zoom)'))
         : [img];
       open(imgs, imgs.indexOf(img));
     });
+
   });
 
   // стрелки

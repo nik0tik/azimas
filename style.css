@@ -189,27 +189,36 @@ nav a {
 }
 nav a:hover { color: var(--gold); }
 
+.text-center {
+  text-align: center;
+}
+
 /* ===== КОНТЕЙНЕР ===== */
 main { max-width: 900px; margin: 0 auto; padding: 0 24px 80px; }
 
 h2 {
   color: var(--gold);
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 8px;
+  padding-bottom: 0;
   margin-top: 48px;
-  transition: color 0.3s, border-color 0.3s;
+  text-align: center;
+  transition: color 0.3s;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 h2::after {
   content: "✮ ✮ ✮";
   display: block;
   text-align: center;
   margin-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  border-bottom: 1px solid var(--line);
   color: var(--gold);
   font-size: 0.7rem;
   letter-spacing: 12px;
   opacity: 0.7;
 }
+
 
 h3 { color: var(--gold); margin-bottom: 4px; transition: color 0.3s; }
 a { color: var(--term); transition: color 0.3s; }
@@ -557,6 +566,104 @@ li { margin-bottom: 4px; }
 }
 .gallery img:hover { transform: scale(1.05); }
 
+.icon-inline {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.divider {
+  display: block;
+  max-height: 100px;
+  width: 100%;
+  margin: 32px auto;
+  object-fit: cover;
+  pointer-events: none; /* нельзя кликнуть */
+}
+
+/* ===== ГАЛЕРЕЯ-ПЛИТКА С КАРУСЕЛЬЮ ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 8px;
+  background: var(--bg-2);
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--bg-2);
+}
+
+.gallery-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+  background: var(--bg-2);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  cursor: zoom-in;
+  transition: transform 0.2s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  border-color: var(--gold);
+  box-shadow: 0 4px 12px rgba(217, 180, 91, 0.3);
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+  
+  .gallery-grid img {
+    height: 120px;
+  }
+}
+
+/* Если хочешь фиксированное количество колонок */
+.gallery-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-grid.cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Убрать прокрутку, если картинок мало */
+.gallery-grid.no-scroll {
+  max-height: none;
+  overflow-y: visible;
+}
+.gallery-grid.portrait img {
+  height: 200px;
+}
+
+
 /* ===== ЛАЙТБОКС ===== */
 img.zoomable { cursor: zoom-in; }
 
@@ -835,4 +942,109 @@ nav.open .burger-icon span:nth-child(3) {
   .nav-menu a:last-child {
     border-bottom: none;
   }
+}
+
+/* ===== РАСКРЫВАЮЩИЕСЯ БЛОКИ (COLLAPSIBLE) ===== */
+.collapsible-header {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-bottom: 0;
+}
+
+.collapsible-header:hover {
+  background: var(--term-bg);
+  border-color: var(--gold);
+}
+
+.collapsible-header h2,
+.collapsible-header h3 {
+  margin: 0;
+  border: none;
+  padding: 0;
+  flex: 1;
+}
+
+.collapsible-header h2::after,
+.collapsible-header h3::after {
+  content: none !important;
+}
+
+.collapsible-icon {
+  font-size: 1.2rem;
+  color: var(--gold);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.collapsible.open .collapsible-icon {
+  transform: rotate(90deg);
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0 0 8px 8px;
+  margin-top: -1px;
+}
+
+.collapsible.open .collapsible-content {
+  max-height: 5000px; /* достаточно большое значение для любого контента */
+  padding: 20px;
+}
+
+.collapsible-content > *:first-child {
+  margin-top: 0;
+}
+
+.collapsible-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Фиолетовый (term) */
+.collapsible.collapsible-term .collapsible-header {
+  background: var(--term-bg);
+  border-color: var(--term);
+}
+
+.collapsible.collapsible-term .collapsible-header:hover {
+  border-color: var(--gold);
+}
+
+.collapsible.collapsible-term .collapsible-header h2,
+.collapsible.collapsible-term .collapsible-header h3 {
+  color: var(--term);
+}
+
+/* Зелёный (nature) */
+.collapsible.collapsible-nature .collapsible-header {
+  background: var(--nature-bg);
+  border-color: var(--nature);
+}
+
+.collapsible.collapsible-nature .collapsible-header h2,
+.collapsible.collapsible-nature .collapsible-header h3 {
+  color: var(--nature);
+}
+
+/* Красный (danger) */
+.collapsible.collapsible-danger .collapsible-header {
+  background: var(--danger-bg);
+  border-color: var(--danger);
+}
+
+.collapsible.collapsible-danger .collapsible-header h2,
+.collapsible.collapsible-danger .collapsible-header h3 {
+  color: var(--danger);
 }

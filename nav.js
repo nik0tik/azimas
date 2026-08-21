@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="characters.html">Characters</a>
         <a href="daily-life.html">Daily Life</a>
         <a href="faq.html">Q&A</a>
-        <a href="gallery.html">Gallery</a>
       </div>
     </nav>
   `;
