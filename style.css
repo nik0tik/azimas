@@ -991,7 +991,7 @@ nav.open .burger-icon span:nth-child(3) {
 .collapsible-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.5s ease;  /* увеличил время для плавности */
   border-left: 1px solid var(--line);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1000,7 +1000,7 @@ nav.open .burger-icon span:nth-child(3) {
 }
 
 .collapsible.open .collapsible-content {
-  max-height: 5000px; /* достаточно большое значение для любого контента */
+  max-height: none;  /* убираем ограничение */
   padding: 20px;
 }
 
@@ -1011,6 +1011,7 @@ nav.open .burger-icon span:nth-child(3) {
 .collapsible-content > *:last-child {
   margin-bottom: 0;
 }
+
 
 /* Фиолетовый (term) */
 .collapsible.collapsible-term .collapsible-header {
